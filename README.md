@@ -31,7 +31,7 @@ This program allows users to input phone numbers, store them in a linked list, a
   
 - **listenElement.h**: It declares the `telefonNummer` type (representing a phone number) and the linked list structure.
 - **makefile**: For the compilation of the program
-- 
+  
 ## Dependencies
 - **C++ Standard Library**: The program uses standard C++ libraries such as:
   - `iostream`: For input/output operations.
