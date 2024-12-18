@@ -34,24 +34,43 @@ This program allows users to input phone numbers, store them in a linked list, a
 
 ## How to Compile and Run
 
-1. Ensure you have a G++ compiler installed.
-2. Create a directory and place the source files (`hwp2_ue301.cpp`, `liste.h`, `liste.cpp`, `listeelement.h` and makefile) inside.
-3. Open a terminal/command prompt in the directory where the files are located.
-4. Compile the program using the following commands (for GCC):
-   1.make
-     output:
-     g++ -std=c++11 -Wall -c hwp2_ue301.cpp
-     g++ -std=c++11 -Wall -c liste.cpp
-     g++ -std=c++11 -Wall -o hwp2_ue301 hwp2_ue301.o liste.o
+### 1. Ensure You Have a G++ Compiler Installed
 
-   2../hwp2_ue301
-     output:
-     Liste erstellt.
-     Bitte geben Sie eine Telefonnummer ein (oder '#' zum Beenden): 10000154412   // Enter a telephone number
-     Bitte geben Sie eine Telefonnummer ein (oder '#' zum Beenden): #             // # to terminate the program
-     Telefonnummer: 10000154412    // The phone number entered
-     Die Liste wurde gelöscht.     // The list has been deleted
-     Die Liste ist jetzt leer.     // the list is empty 
+Make sure you have a C++ compiler such as **G++** installed on your system. If not, install it via your system's package manager (e.g., `apt`, `brew`, `yum`) or download it from [GCC's official website](https://gcc.gnu.org/).
+
+### 2. Prepare Your Files
+
+Create a directory and place the following source files inside it:
+- `hwp2_ue301.cpp`
+- `liste.h`
+- `liste.cpp`
+- `listeelement.h`
+- `Makefile`
+
+### 3. Open Terminal/Command Prompt
+
+Navigate to the directory where the source files are located by opening a terminal or command prompt.
+
+### 4. Compile the Program
+
+Use the `make` utility to compile the program by running the following command:
+
+```bash
+make
+output:
+g++ -std=c++11 -Wall -c hwp2_ue301.cpp
+g++ -std=c++11 -Wall -c liste.cpp
+g++ -std=c++11 -Wall -o hwp2_ue301 hwp2_ue301.o liste.o
+
+Once the program is successfully compiled, you can run it with:
+./hwp2_ue301
+output:
+Liste erstellt.
+Bitte geben Sie eine Telefonnummer ein (oder '#' zum Beenden): 10000154412  // Enter a telephone number
+Bitte geben Sie eine Telefonnummer ein (oder '#' zum Beenden): #            // '#' to terminate the program
+Telefonnummer: 10000154412    // The phone number entered
+Die Liste wurde gelöscht.     // The list has been deleted
+Die Liste ist jetzt leer.     // The list is empty
 
 ## Dependencies
 - **C++ Standard Library**: The program uses standard C++ libraries such as:
