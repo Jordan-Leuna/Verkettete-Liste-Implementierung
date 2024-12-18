@@ -50,7 +50,7 @@ While the current program works for simple input and output operations, there ar
    - This could involve asking the user which phone number to delete and then removing it from the linked list, ensuring the list is properly updated and the memory is freed accordingly.
      
 ## License
-This program is free to use and modify. Please cite the Salsa20 algorithm if using this code in other projects.
+This program is free to use and modify.
 
 ## How to Compile and Run
 
