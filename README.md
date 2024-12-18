@@ -78,13 +78,14 @@ Use the `make` utility to compile the program by running the following command:
 
 ```bash
 make
+
 output:
 g++ -std=c++11 -Wall -c hwp2_ue301.cpp
 g++ -std=c++11 -Wall -c liste.cpp
 g++ -std=c++11 -Wall -o hwp2_ue301 hwp2_ue301.o liste.o
 
-Once the program is successfully compiled, you can run it with:
-./hwp2_ue301
+Once the program is successfully compiled, you can run it with: ./hwp2_ue301
+
 output:
 Liste erstellt.
 Bitte geben Sie eine Telefonnummer ein (oder '#' zum Beenden): 10000154412  // Enter a telephone number
