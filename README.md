@@ -21,7 +21,7 @@ This program allows users to input phone numbers, store them in a linked list, a
 6. **Delete List**: The program deletes the list to free up memory.
 7. **Check for Empty List**: Finally, the program checks if the list is empty and informs the user.
 
-### Description of Files
+## Description of Files
 
 - **hwp2_ue301.cpp**: Contains the main function and the primary logic for interacting with the user. It handles user input, calls functions to add phone numbers to the list, and handles the display and deletion of the list.
   
@@ -31,6 +31,27 @@ This program allows users to input phone numbers, store them in a linked list, a
   
 - **listenElement.h**: It declares the `telefonNummer` type (representing a phone number) and the linked list structure.
 - **makefile**: For the compilation of the program
+- 
+## Dependencies
+- **C++ Standard Library**: The program uses standard C++ libraries such as:
+  - `iostream`: For input/output operations.
+  - `string`: For handling string data, particularly user input.
+  - `std::stol`: For converting the string input to a long integer, which is used for phone numbers.
+
+## Potential Improvements
+While the current program works for simple input and output operations, there are several improvements that could be made to enhance functionality and performance:
+
+1. **Search for a Specific Phone Number**:
+   - Currently, the program only adds phone numbers to the list and displays them. A useful improvement would be to allow the user to search for a specific phone number in the list.
+   - This feature could involve prompting the user to enter a phone number and checking if it exists in the list. A function could be added to search through the list of phone numbers and return a message indicating whether or not the number is found.
+
+2. **Remove Phone Numbers from the List**:
+   - Another useful enhancement would be adding the ability to remove a phone number from the list.
+   - This could involve asking the user which phone number to delete and then removing it from the linked list, ensuring the list is properly updated and the memory is freed accordingly.
+
+3. **Use a More Complex Data Structure (e.g., Binary Search Tree)**:
+   - The current implementation uses a simple linked list to store phone numbers. While this works fine for small datasets, a more complex data structure like a **binary search tree (BST)** could be used for faster search, insertion, and deletion operations.
+   - A binary search tree would allow for **O(log n)** search, insertion, and deletion times, which would be beneficial if the program needs to handle a large number of phone numbers efficiently. This would involve restructuring the program to store the phone numbers in nodes that follow the binary search tree property (left nodes are smaller, right nodes are larger).
 
 ## How to Compile and Run
 
@@ -44,7 +65,7 @@ Create a directory and place the following source files inside it:
 - `hwp2_ue301.cpp`
 - `liste.h`
 - `liste.cpp`
-- `listeelement.h`
+- `listenElement.h`
 - `Makefile`
 
 ### 3. Open Terminal/Command Prompt
@@ -72,29 +93,7 @@ Telefonnummer: 10000154412    // The phone number entered
 Die Liste wurde gelöscht.     // The list has been deleted
 Die Liste ist jetzt leer.     // The list is empty
 
-## Dependencies
-- **C++ Standard Library**: The program uses standard C++ libraries such as:
-  - `iostream`: For input/output operations.
-  - `string`: For handling string data, particularly user input.
-  - `std::stol`: For converting the string input to a long integer, which is used for phone numbers.
 
-## Potential Improvements
-While the current program works for simple input and output operations, there are several improvements that could be made to enhance functionality and performance:
-
-1. **Search for a Specific Phone Number**:
-   - Currently, the program only adds phone numbers to the list and displays them. A useful improvement would be to allow the user to search for a specific phone number in the list.
-   - This feature could involve prompting the user to enter a phone number and checking if it exists in the list. A function could be added to search through the list of phone numbers and return a message indicating whether or not the number is found.
-
-2. **Remove Phone Numbers from the List**:
-   - Another useful enhancement would be adding the ability to remove a phone number from the list.
-   - This could involve asking the user which phone number to delete and then removing it from the linked list, ensuring the list is properly updated and the memory is freed accordingly.
-
-3. **Use a More Complex Data Structure (e.g., Binary Search Tree)**:
-   - The current implementation uses a simple linked list to store phone numbers. While this works fine for small datasets, a more complex data structure like a **binary search tree (BST)** could be used for faster search, insertion, and deletion operations.
-   - A binary search tree would allow for **O(log n)** search, insertion, and deletion times, which would be beneficial if the program needs to handle a large number of phone numbers efficiently. This would involve restructuring the program to store the phone numbers in nodes that follow the binary search tree property (left nodes are smaller, right nodes are larger).
-
-
-This README provides a clear description of the program, its structure, and how to compile and run it.
 
    
 
