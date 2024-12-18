@@ -48,16 +48,15 @@ While the current program works for simple input and output operations, there ar
 2. **Remove Phone Numbers from the List**:
    - Another useful enhancement would be adding the ability to remove a phone number from the list.
    - This could involve asking the user which phone number to delete and then removing it from the linked list, ensuring the list is properly updated and the memory is freed accordingly.
-
-3. **Use a More Complex Data Structure (e.g., Binary Search Tree)**:
-   - The current implementation uses a simple linked list to store phone numbers. While this works fine for small datasets, a more complex data structure like a **binary search tree (BST)** could be used for faster search, insertion, and deletion operations.
-   - A binary search tree would allow for **O(log n)** search, insertion, and deletion times, which would be beneficial if the program needs to handle a large number of phone numbers efficiently. This would involve restructuring the program to store the phone numbers in nodes that follow the binary search tree property (left nodes are smaller, right nodes are larger).
+     
+## License
+This program is free to use and modify. Please cite the Salsa20 algorithm if using this code in other projects.
 
 ## How to Compile and Run
 
 ### 1. Ensure You Have a G++ Compiler Installed
 
-Make sure you have a C++ compiler such as **G++** installed on your system. If not, install it via your system's package manager (e.g., `apt`, `brew`, `yum`) or download it from [GCC's official website](https://gcc.gnu.org/).
+Make sure you have a C++ compiler such as **G++** installed on your system.
 
 ### 2. Prepare Your Files
 
@@ -77,14 +76,14 @@ Navigate to the directory where the source files are located by opening a termin
 Use the `make` utility to compile the program by running the following command:
 
 ```bash
-make
+make // first command 
 
 output:
 g++ -std=c++11 -Wall -c hwp2_ue301.cpp
 g++ -std=c++11 -Wall -c liste.cpp
 g++ -std=c++11 -Wall -o hwp2_ue301 hwp2_ue301.o liste.o
 
-Once the program is successfully compiled, you can run it with: ./hwp2_ue301
+Once the program is successfully compiled, you can run it with: ./hwp2_ue301 // second command 
 
 output:
 Liste erstellt.
@@ -93,11 +92,3 @@ Bitte geben Sie eine Telefonnummer ein (oder '#' zum Beenden): #            // '
 Telefonnummer: 10000154412    // The phone number entered
 Die Liste wurde gelöscht.     // The list has been deleted
 Die Liste ist jetzt leer.     // The list is empty
-
-
-
-   
-
-   
-
-
